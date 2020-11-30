@@ -54,7 +54,7 @@
       </mat-error>
     </mat-form-field>
   </p>
-  <mat-error>{{err}}</mat-error>
+  <mat-error style="margin-bottom: 20px">{{err}}</mat-error>
   <button *ngIf="!toCreate" (click)="modify()" type="submit" mat-button>Modify</button>
   <button *ngIf="toCreate" (click)="insert()" type="submit" style="background-color: green" mat-button>Create</button>
   <button *ngIf="!toCreate" type="button" (click)="delete()" style="background-color: darkred; margin-left: 10px"

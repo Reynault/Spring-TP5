@@ -22,7 +22,7 @@ export class AlbumListComponent implements OnInit {
         this._albums = data;
       },
       error => {
-        this._router.navigate(['/404']);
+        this._albums = [];
       }
     );
   }

@@ -70,6 +70,7 @@ public class AlbumController {
 
     @GetMapping(value = "/cestqui")
     public String getName(){
+        System.out.println("HELLO THERE !");
         return me;
     }
 }

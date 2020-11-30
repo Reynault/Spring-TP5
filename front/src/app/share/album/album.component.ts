@@ -143,9 +143,9 @@ export class AlbumComponent implements OnInit {
   private static _handleError(error: number): string {
     switch (error) {
       case 404:
-        return "NOT FOUND";
+        return "Data not found !";
       default:
-        return "SERVER ERROR";
+        return "Impossible to connect to the server !";
     }
   }
 }
