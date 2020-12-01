@@ -26,6 +26,7 @@ public class AlbumController {
 
     @GetMapping(value = "/albums")
     public Collection<Album> getAlbums(HttpServletResponse response) {
+        System.out.println("GET ALBUMS !");
         Iterable<Album> iterable = dao.findAll();
         Collection<Album> albums = new ArrayList<>();
         iterable.forEach(albums::add);
